@@ -34,8 +34,9 @@ If you are more interested in stable releases of our apps:
 
 <https://github.com/mreditor97/homeassistant-apps>
 
-[release-shield]: https://img.shields.io/badge/version-1ffee69-blue.svg
-[release]: https://github.com/mreditor97/app-ddns-cloudflare/tree/1ffee69
+
+[release-shield]: https://img.shields.io/badge/version-3d45bcb-blue.svg
+[release]: https://github.com/mreditor97/app-ddns-cloudflare/tree/3d45bcb
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [cloudflare]: https://www.cloudflare.com
