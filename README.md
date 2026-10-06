@@ -60,9 +60,9 @@ For a general repository issue or app ideas [open an issue here][issue]
 [ddns-cloudflare-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 
 
-[app-ddns-godaddy]: https://github.com/mreditor97/app-ddns-godaddy/tree/4e89547
+[app-ddns-godaddy]: https://github.com/mreditor97/app-ddns-godaddy/tree/4689f46
 [ddns-godaddy-issue]: https://github.com/mreditor97/app-ddns-godaddy/issues
-[ddns-godaddy-version-shield]: https://img.shields.io/badge/version-4e89547-blue.svg
+[ddns-godaddy-version-shield]: https://img.shields.io/badge/version-4689f46-blue.svg
 
 [ddns-godaddy-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 
