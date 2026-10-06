@@ -51,9 +51,9 @@ on the correct GitHub repository matching the app.
 For a general repository issue or app ideas [open an issue here][issue]
 
 
-[app-ddns-cloudflare]: https://github.com/mreditor97/app-ddns-cloudflare/tree/3d45bcb
+[app-ddns-cloudflare]: https://github.com/mreditor97/app-ddns-cloudflare/tree/165cec2
 [ddns-cloudflare-issue]: https://github.com/mreditor97/app-ddns-cloudflare/issues
-[ddns-cloudflare-version-shield]: https://img.shields.io/badge/version-3d45bcb-blue.svg
+[ddns-cloudflare-version-shield]: https://img.shields.io/badge/version-165cec2-blue.svg
 
 [ddns-cloudflare-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 

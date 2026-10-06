@@ -1,1 +1,1 @@
-- ⬆️ Update App base image to v3.24 (#9)
+- Restrict workflow permissions and replace workflow_run trigger (#10)
