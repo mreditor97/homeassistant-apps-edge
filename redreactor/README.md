@@ -4,10 +4,7 @@ Automatically control your Red Reactor Battery Monitor from within Home Assistan
 
 [![Release][release-shield]][release]
 ![Supports aarch64 Architecture][aarch64-shield]
-![Supports armhf Architecture][armhf-shield]
-![Supports armv7 Architecture][armv7-shield]
 ![Supports amd64 Architecture][amd64-shield]
-![Supports i386 Architecture][i386-shield]
 
 ## About
 
@@ -35,12 +32,8 @@ If you are more interested in stable releases of our apps:
 
 <https://github.com/mreditor97/homeassistant-apps>
 
-
 [release-shield]: https://img.shields.io/badge/version-3bd59da-blue.svg
 [release]: https://github.com/mreditor97/app-redreactor/tree/3bd59da
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
-[armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
-[armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-no-red.svg
-[i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [redreactor]: https://www.theredreactor.com/
