@@ -1,4 +1,17 @@
 # Changelog since 0.1.6
+- Restrict workflow permissions and replace workflow_run trigger (#56) 
+- 🔒 Restrict workflow token permissions and avoid workflow_run
+
+Fix zizmor code-scanning findings:
+- excessive-permissions: default every workflow to no permissions and
+  grant each job only what the reusable workflow it calls declares.
+- dangerous-triggers: replace the workflow_run trigger in deploy.yaml with
+  push to master and published releases, running CI then deploy as
+  dependent jobs (mirrors the hassio-addons app-example). ci.yaml now
+  runs on pull requests and manual dispatch only.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01VpoEuBAuro3EAkZgHqh67c 
 - Rename add-on to app (#55) 
 - 📌 Pin shared workflows to hassio-addons/workflows v4.0.0
 
