@@ -27,6 +27,7 @@ GoDaddy Dynamic DNS updating service with Let's Encrypt support
 
 Red Reactor Battery Monitoring service
 
+
 ## Releases
 
 Releases are based on [Semantic Versioning][semver], and use the format
@@ -49,6 +50,7 @@ on the correct GitHub repository matching the app.
 
 For a general repository issue or app ideas [open an issue here][issue]
 
+
 [app-ddns-cloudflare]: https://github.com/mreditor97/app-ddns-cloudflare/tree/1ffee69
 [ddns-cloudflare-issue]: https://github.com/mreditor97/app-ddns-cloudflare/issues
 [ddns-cloudflare-version-shield]: https://img.shields.io/badge/version-1ffee69-blue.svg
@@ -56,6 +58,7 @@ For a general repository issue or app ideas [open an issue here][issue]
 [ddns-cloudflare-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 
 [ddns-cloudflare-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+
 
 [app-ddns-godaddy]: https://github.com/mreditor97/app-ddns-godaddy/tree/6f5e890
 [ddns-godaddy-issue]: https://github.com/mreditor97/app-ddns-godaddy/issues
@@ -65,6 +68,7 @@ For a general repository issue or app ideas [open an issue here][issue]
 
 [ddns-godaddy-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 
+
 [app-redreactor]: https://github.com/mreditor97/app-redreactor/tree/3bd59da
 [redreactor-issue]: https://github.com/mreditor97/app-redreactor/issues
 [redreactor-version-shield]: https://img.shields.io/badge/version-3bd59da-blue.svg
@@ -72,6 +76,7 @@ For a general repository issue or app ideas [open an issue here][issue]
 [redreactor-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 
 [redreactor-amd64-shield]: https://img.shields.io/badge/amd64-no-red.svg
+
 
 [issue]: https://github.com/mreditor97/homeassistant-apps-edge/issues
 [semver]: http://semver.org/spec/v2.0.0.html
