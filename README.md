@@ -1,9 +1,9 @@
-# MrEditor97's Home Assistant Add-on's Repository - Edge
+# MrEditor97's Home Assistant Apps Repository - Edge
 
-Add-ons for Home Assistant. Allowing you to extend the functionality of your Home Assistant setup, these can be installed and configured from within the Home Assistant frontend.
+Apps for Home Assistant. Allowing you to extend the functionality of your Home Assistant setup, these can be installed and configured from within the Home Assistant frontend.
 
-## Available Add-ons
-### &#10003; [Cloudflare Dynamic DNS Updater][addon-ddns-cloudflare]
+## Available Apps
+### &#10003; [Cloudflare Dynamic DNS Updater][app-ddns-cloudflare]
 
 ![Latest Version][ddns-cloudflare-version-shield]
 ![Supports armhf Architecture][ddns-cloudflare-armhf-shield]
@@ -14,7 +14,7 @@ Add-ons for Home Assistant. Allowing you to extend the functionality of your Hom
 
 Cloudflare Dynamic DNS updating service with Let's Encrypt support
 
-### &#10003; [GoDaddy Dynamic DNS Updater][addon-ddns-godaddy]
+### &#10003; [GoDaddy Dynamic DNS Updater][app-ddns-godaddy]
 
 ![Latest Version][ddns-godaddy-version-shield]
 ![Supports armhf Architecture][ddns-godaddy-armhf-shield]
@@ -25,7 +25,7 @@ Cloudflare Dynamic DNS updating service with Let's Encrypt support
 
 GoDaddy Dynamic DNS updating service with Let's Encrypt support
 
-### &#10003; [Red Reactor Battery Monitor][addon-redreactor]
+### &#10003; [Red Reactor Battery Monitor][app-redreactor]
 
 ![Latest Version][redreactor-version-shield]
 ![Supports armhf Architecture][redreactor-armhf-shield]
@@ -50,18 +50,18 @@ based on the following:
 ## Support
 
 You can open an issue here on GitHub. Note, we use a separate
-GitHub repository for each add-on. Please ensure you are creating the issue
-on the correct GitHub repository matching the add-on.
+GitHub repository for each app. Please ensure you are creating the issue
+on the correct GitHub repository matching the app.
 
-- [Open an issue for the add-on: Cloudflare Dynamic DNS Updater][ddns-cloudflare-issue]
-- [Open an issue for the add-on: GoDaddy Dynamic DNS Updater][ddns-godaddy-issue]
-- [Open an issue for the add-on: Red Reactor Battery Monitor][redreactor-issue]
+- [Open an issue for the app: Cloudflare Dynamic DNS Updater][ddns-cloudflare-issue]
+- [Open an issue for the app: GoDaddy Dynamic DNS Updater][ddns-godaddy-issue]
+- [Open an issue for the app: Red Reactor Battery Monitor][redreactor-issue]
 
-For a general repository issue or add-on ideas [open an issue here][issue]
+For a general repository issue or app ideas [open an issue here][issue]
 
 
-[addon-ddns-cloudflare]: https://github.com/mreditor97/addon-ddns-cloudflare/tree/1ffee69
-[ddns-cloudflare-issue]: https://github.com/mreditor97/addon-ddns-cloudflare/issues
+[app-ddns-cloudflare]: https://github.com/mreditor97/app-ddns-cloudflare/tree/1ffee69
+[ddns-cloudflare-issue]: https://github.com/mreditor97/app-ddns-cloudflare/issues
 [ddns-cloudflare-version-shield]: https://img.shields.io/badge/version-1ffee69-blue.svg
 
 [ddns-cloudflare-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
@@ -75,8 +75,8 @@ For a general repository issue or add-on ideas [open an issue here][issue]
 [ddns-cloudflare-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 
 
-[addon-ddns-godaddy]: https://github.com/mreditor97/addon-ddns-godaddy/tree/6f5e890
-[ddns-godaddy-issue]: https://github.com/mreditor97/addon-ddns-godaddy/issues
+[app-ddns-godaddy]: https://github.com/mreditor97/app-ddns-godaddy/tree/6f5e890
+[ddns-godaddy-issue]: https://github.com/mreditor97/app-ddns-godaddy/issues
 [ddns-godaddy-version-shield]: https://img.shields.io/badge/version-6f5e890-blue.svg
 
 [ddns-godaddy-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
@@ -90,8 +90,8 @@ For a general repository issue or add-on ideas [open an issue here][issue]
 [ddns-godaddy-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 
 
-[addon-redreactor]: https://github.com/mreditor97/addon-redreactor/tree/3bd59da
-[redreactor-issue]: https://github.com/mreditor97/addon-redreactor/issues
+[app-redreactor]: https://github.com/mreditor97/app-redreactor/tree/3bd59da
+[redreactor-issue]: https://github.com/mreditor97/app-redreactor/issues
 [redreactor-version-shield]: https://img.shields.io/badge/version-3bd59da-blue.svg
 
 [redreactor-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
@@ -105,5 +105,5 @@ For a general repository issue or add-on ideas [open an issue here][issue]
 [redreactor-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 
 
-[issue]: https://github.com/mreditor97/homeassistant-addons-edge/issues
+[issue]: https://github.com/mreditor97/homeassistant-apps-edge/issues
 [semver]: http://semver.org/spec/v2.0.0.html
