@@ -1,15 +1,15 @@
 ---
 channel: edge
-addons:
+apps:
   redreactor:
-    repository: mreditor97/addon-redreactor
+    repository: mreditor97/app-redreactor
     target: redreactor
     image: ghcr.io/mreditor97/redreactor/{arch}
   ddns-godaddy:
-    repository: mreditor97/addon-ddns-godaddy
+    repository: mreditor97/app-ddns-godaddy
     target: ddns-godaddy
     image: ghcr.io/mreditor97/ddns-godaddy/{arch}
   ddns-cloudflare:
-    repository: mreditor97/addon-ddns-cloudflare
+    repository: mreditor97/app-ddns-cloudflare
     target: ddns-cloudflare
     image: ghcr.io/mreditor97/ddns-cloudflare/{arch}
