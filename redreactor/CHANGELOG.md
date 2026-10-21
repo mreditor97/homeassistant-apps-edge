@@ -1,4 +1,7 @@
 # Changelog since 0.1.6
+- ⬆️ Update home-assistant/cli to v5.6.0 (#57)
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com> 
 - Restrict workflow permissions and replace workflow_run trigger (#56) 
 - 🔒 Restrict workflow token permissions and avoid workflow_run
 
