@@ -1,6 +1,6 @@
 name: Red Reactor Battery Monitor
 description: Red Reactor Battery Monitoring service
-version: 5b82945
+version: 77f85b1
 slug: redreactor
 url: https://github.com/mreditor97/app-redreactor
 startup: services
@@ -28,9 +28,7 @@ options:
   ina: {}
   battery:
     curve: []
-  system:
-    shutdown: ha host shutdown
-    restart: ha host restart
+  system: {}
   logging:
     console: INFO
     file: WARNING
@@ -52,22 +50,25 @@ schema:
     pretty: match(^.*\S.*$)
   homeassistant:
     discovery: bool?
-    discovery_interval: int(1,86400)
+    discovery_interval: int(0,86400)
     expire_after: int(0,)
     status_topic: match(^[^+#]+$)?
     status_online: match(^.+$)?
   ina:
     address: int(3,119)?
     monitor_interval: int(1,60)?
+    adc_samples: list(1|2|4|8|16|32|64|128)?
   battery:
     internal_resistance: float(0,)?
     average_readings: int(1,100)?
+    shutdown_readings: int(1,20)?
+    report_level_change: int(0,100)?
     curve:
     - voltage: float
       level: float(0,100)
   system:
-    shutdown: match(^.*\S.*$)
-    restart: match(^.*\S.*$)
+    shutdown: str?
+    restart: str?
   logging:
     console: list(DEBUG|INFO|WARNING|ERROR|CRITICAL)
     file: list(DEBUG|INFO|WARNING|ERROR|CRITICAL)

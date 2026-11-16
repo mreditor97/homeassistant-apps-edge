@@ -1,8 +1,44 @@
 # Changelog since 0.1.6
+- Update the edge app to redreactor 0.1.9a609 
+- Add the new redreactor options, and check the schema against the service (#74) 
+- Merge origin/master into claude/project-thread-vho3j8
+
+Drops the ha CLI version bump, as the CLI is no longer installed.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01NpHVNNCwD1q9e1pRG2XmH2 
+- ⚡ Leave the shutdown and restart commands empty by default
+
+Red Reactor now chooses the Supervisor API itself when `system.shutdown`
+and `system.restart` are left empty, so the app no longer sets them. Saved
+`ha host` values still go to the Supervisor API.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01NpHVNNCwD1q9e1pRG2XmH2 
 - ⬆️ Update home-assistant/cli to v6 (#76)
 
 Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com> 
+- 🔥 Drop the ha CLI from the image
+
+redreactor now sends `ha host shutdown` and `ha host restart` straight to
+the Supervisor API (POST /host/shutdown and /host/reboot) when it runs under
+the Supervisor, with the app's existing manager role. The saved options keep
+their values, so nothing changes for existing installs. Needs the redreactor
+release with that change before it is merged.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01NpHVNNCwD1q9e1pRG2XmH2 
+- 📝 Add the shutdown readings option, and drop the removed entities from the docs
+
+battery.shutdown_readings sets how many low readings in a row start the
+shutdown. The monitor interval, readings averaged and shutdown readings are
+app options only, as the service no longer offers them on the device page,
+and the Sensor problem, Last shutdown and Refresh entities are gone.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01NpHVNNCwD1q9e1pRG2XmH2 
 - Update the edge app to redreactor 0.1.9a608 
+- Merge remote-tracking branch 'origin/master' into claude/project-thread-vho3j8 
 - Update the edge app to redreactor 0.1.9a607 
 - Update the edge app to redreactor 0.1.9a606 
 - Update the edge app to redreactor 0.1.9a604 
@@ -18,6 +54,39 @@ Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
 - Update the edge app to redreactor 0.1.9a597 
 - Update the edge app to redreactor 0.1.9a596 
 - Update the edge app to redreactor 0.1.9a595 
+- Don't install a compiler in the image
+
+redreactor reads the INA219 with smbus2, which is pure Python, so gcc,
+musl-dev and linux-headers are no longer needed. paho-mqtt and smbus2 are
+pure Python wheels, and PyYAML (no musllinux aarch64 wheel for Python
+3.15) builds without its optional C extension when there is no compiler.
+
+redreactor 0.1.8 and older need spidev compiled, so the stable and beta
+pins must move to a release with smbus2 before this is released.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01NpHVNNCwD1q9e1pRG2XmH2 
+- Pin actions/checkout and don't keep its credentials
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01NpHVNNCwD1q9e1pRG2XmH2 
+- Add the new redreactor options, and check the schema against the service
+
+- Options schema: homeassistant.discovery_interval accepts 0 (only on
+  connect and when Home Assistant restarts), and new ina.adc_samples and
+  battery.report_level_change options, with translations and DOCS
+- DOCS and translations explain that expire_after is raised to at least
+  twice the report interval plus 30 seconds
+- DOCS cover the new device entities (settable monitor interval, readings
+  averaged and shutdown readings, refresh, sensor problem, last shutdown)
+  and that only /dev/i2c-1 is passed to the app
+- New Red Reactor workflow: installs each of the stable, beta and edge
+  pins on Python 3.15 and runs python -m redreactor --help, and for the edge
+  pin loads every schema limit with redreactor's own configuration checks,
+  so a value the schema allows but the service refuses fails in CI
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01NpHVNNCwD1q9e1pRG2XmH2 
 - Update the edge app to redreactor 0.1.9a594 
 - 🔧 Tighten the options schema to the service's start-up limits (#73) 
 - 🔧 Require a birth message payload when one is set
