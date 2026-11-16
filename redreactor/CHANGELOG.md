@@ -1,4 +1,5 @@
 # Changelog since 0.1.6
+- Update the edge app to redreactor 0.1.9a606 
 - Update the edge app to redreactor 0.1.9a604 
 - Update the edge app to redreactor 0.1.9a603 
 - Update the edge app to redreactor 0.1.9a602 
