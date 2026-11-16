@@ -1,6 +1,6 @@
 name: Red Reactor Battery Monitor
 description: Red Reactor Battery Monitoring service
-version: 77f85b1
+version: 0.1.7
 slug: redreactor
 url: https://github.com/mreditor97/app-redreactor
 startup: services
